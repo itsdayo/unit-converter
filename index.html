@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit Converter</title>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="initial-scale=1.25, user-scalable=no">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+			<h1 class="text-center display-4">Unit Coverter</h1>
+	<form>						
+		<div class="input-group">
+			<input class=" form-control form-control-lg" type="number" name="inputValue" id="inputValue" placeholder="Enter Pounds">
+			<div class="input-group-append">
+				<select class="btn" id="unit">
+					<optgroup label="Weight">
+					<option>lbs</option>
+					<option>grams</option>
+					<option>kilograms</option>
+					<option>ounces</option>
+					</optgroup>
+					<optgroup label="Temperature">
+					<option>fahrenheit</option>
+					<option>celsius</option>
+					<option>kelvin</option>
+					</optgroup>
+					<optgroup label= "Distance">
+					<option>meters</option>
+					<option>miles</option>
+					<option>inches</option>
+					</optgroup>
+				</select>
+			</div>
+		</div>
+	</form>
+</div>
+
+<div id="output"></div>	
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
